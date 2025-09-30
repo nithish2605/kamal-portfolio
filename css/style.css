@@ -1,0 +1,86 @@
+body {
+    /* background: radial-gradient(circle at 34% 52%,#120422, #0c092a, #000000); */
+    /* background: radial-gradient(circle at 34% 52%, #120422, #090211, #000000); */
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../assets/shapes/background-image-kamal.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+:root {
+    --light-grey: #4d4d4d !important;
+}
+
+.text-light-grey {
+    color: var(--light-grey);
+}
+
+h1 {
+    font-size: 6rem !important;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.navbar-btn {
+    border: solid 1px #fff;
+    border-radius: 2rem;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 0.1rem;
+    width: 0%;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    color: #cabdbd;
+}
+
+.talk-btn {
+    color: #fff;
+    text-decoration: none;
+    border: solid 2px #fff;
+    border-radius: 2rem;
+    transition: 0.3s ease;
+    padding: 0.8rem 1.6rem;
+}
+
+.talk-btn:hover {
+    color: #000;
+    background-color: #fff;
+    transition: 0.3s all ease;
+    .fa-arrow-right {
+        transform: rotate(0deg) !important;
+    }
+}
+
+.btn-navclose {
+    color: #fff !important;
+    background-color: black;
+    border: 3px solid #fff;
+}
+
+#mob-link:hover {
+    color: #767373 !important;
+}
+
+.fa-arrow-right {
+    transform: rotate(-30deg) !important;
+    transition: 0.3s all ease;
+}
