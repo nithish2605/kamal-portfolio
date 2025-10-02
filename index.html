@@ -33,7 +33,10 @@
             </ul>
 
             <!-- Brand -->
-            <a class="navbar-brand fs-3 me-lg-auto" href="#">Kamal Vikram.</a>
+            <div class="d-flex me-auto">
+                <img class="img-fluid rounded-pill me-3" src="assets/img/kamal-profile.png" alt="">
+                <a class="navbar-brand fs-3 me-lg-auto" href="#">Kamal Vikram.</a>
+            </div>
 
             <!-- Button -->
             <a class="talk-btn fs-5 d-none d-lg-block " href="#">LETS TALK</a>
@@ -46,8 +49,13 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
-                    <h5 id="offcanvasRightLabel"><a href="#" class="text-decoration-none text-dark">Kamal Vikram.</a>
-                    </h5>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <img class="img-fluid rounded-pill" src="assets/img/kamal-profile.png" alt="">
+                        <h5 id="offcanvasRightLabel"><a href="#" class="text-decoration-none text-dark ms-3">Kamal
+                                Vikram.</a>
+                        </h5>
+                    </div>
+
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
@@ -73,78 +81,83 @@
 
     <!-- herosection starts here-->
     <section class="hero-section mt-lg-3 pb-5">
-        <div class="container pt-5">
+        <div class="container-md pt-5">
+
             <div class="row align-items-center">
-                <div class="col-lg-2">
+                <div class="col-lg-2  col-4">
                     <img src="assets/shapes/right-arrow.png" class="img-fluid" alt="arrow-image">
                 </div>
-                <div class="col-lg-10">
-                    <h1 class="ms-5" style="letter-spacing: 0.2rem;">Crafting Digital</h1>
+                <div class="col-lg-10 col-8">
+                    <h1 class="ms-lg-5" style="letter-spacing: 0.2rem;">Analyzing Data</h1>
                 </div>
             </div>
-            <h1 class="" style="letter-spacing: 0.2rem;">Experiences With<span class="text-light-grey"> Passion</span>
+            <h1 class="" style="letter-spacing: 0.2rem;">Insights With<span class="text-light-grey"> Clarity</span>
+                <span class="text-light-grey d-block d-sm-none mt-2" style="letter-spacing: 0.2rem;">and
+                    Accuracy.</span>
             </h1>
             <div class="row align-items-center">
-                <div class="col-7">
-                    <h1 class="text-light-grey" style="letter-spacing: 0.2rem;">and Precision.</h1>
+                <div class="col-md-7 col-7">
+                    <h1 class="text-light-grey d-none d-sm-block " style="letter-spacing: 0.2rem;">and Accuracy.</h1>
                 </div>
-                <div class="col-5">
-                    <lead style="color: #aeaeac;">Discover the Artistry Behind a Portfolio that <br> Echoes
-                        Innovation and creativity</lead>
+                <div class="col-md-5 col-12 d-none d-md-block text-md-start text-center">
+                    <p class="m-0" style="color: #aeaeac;">Discover the Artistry Behind a Portfolio that </p>
+                    <p class="m-0" style="color: #aeaeac;">Echoes Innovation and creativity</p>
                 </div>
             </div>
 
-            <div class="explore-section mb-5" style="border-bottom: 2px solid #4d4d4d;">
+
+
+            <!-- explore button -->
+            <div class="explore-section mb-5 pb-4" style="border-bottom: 2px solid #4d4d4d;">
                 <div class="row">
-                    <div class="col-7">
-                        <div class="row align-items-center mt-5">
-                            <div class="col-6">
-                                <a class="talk-btn fs-5 d-none d-lg-block" href="#" style="width: fit-content;">EXPLORE
+                    <div class="col-xl-7 col-md-8 col-sm-6 col-8">
+                        <div class="row align-items-center mt-lg-5 mt-2">
+                            <div class="col-xl-5 col-md-7">
+                                <a class="explore-btn d-block px-lg-4 py-lg-3 px-3 py-2 mb-sm-4 mb-md-0" href="#"
+                                    style="width: fit-content;">EXPLORE
                                     MY PORTFOLIO<i class="fa-solid fa-arrow-right ms-3"></i></a>
                             </div>
-                            <div class="col-6">
-                                <span class="ms-3">50+ Satisfied Clients and Counting.</span>
+                            <div class="col-xl-7 col-md-5">
+                                <span class="d-none d-sm-block">50+ Satisfied Clients and Counting.</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-xl-5 col-md-4 col-sm-6 col-4">
                         <img class="img-fluid" src="assets/shapes/silver-image-1(1).png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-3">
-                    <div class="d-flex justify-content-around">
-                        <h4>Data Visualization</h4>
-                        <i class="fa-regular fa-sun text-light-grey fs-3"></i>
+
+            <!-- skills area -->
+            <div class="row text-center">
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <i class="fa-regular fa-star fs-2 mb-2"></i>
+                        <h4 class="fs-6 fs-md-5">Data Visualization</h4>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="d-flex justify-content-around">
-                        <h4>Statistical Analysis</h4>
-                        <i class="fa-regular fa-sun text-light-grey fs-3"></i>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <i class="fa-regular fa-star fs-2 mb-2"></i>
+                        <h4 class="fs-6 fs-md-5">Statistical Analysis</h4>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="d-flex justify-content-around">
-                        <h4>SQL & Databases</h4>
-                        <i class="fa-regular fa-sun text-light-grey fs-3"></i>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <i class="fa-regular fa-star fs-2 mb-2"></i>
+                        <h4 class="fs-6 fs-md-5">SQL & Databases</h4>
                     </div>
                 </div>
-                <div class="col-3">
-                    <!-- <div class="d-flex justify-content-around"> -->
-                        <h4>Problem Solving</h4>
-                        <!-- <i class="fa-regular fa-sun text-light-grey fs-3 mx-4"></i> -->
+
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <i class="fa-regular fa-star fs-2 mb-2"></i>
+                        <h4 class="fs-6 fs-md-5">Problem Solving</h4>
                     </div>
                 </div>
-                <!-- <div class="d-flex justify-content-between">
-                    <h4>Data Visualization</h4><i class="fa-regular fa-sun text-light-grey fs-3"></i>
-                    <h4>Data Visualization</h4><i class="fa-regular fa-sun text-light-grey fs-3"></i>
-                    <h4>Data Visualization</h4><i class="fa-regular fa-sun text-light-grey fs-3"></i>
-                    <h4>Data Visualization</h4>
-                </div> -->
             </div>
-        </div>
         </div>
     </section>
 
