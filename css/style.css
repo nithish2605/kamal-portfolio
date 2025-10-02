@@ -1,13 +1,11 @@
+.hero-section,
 body {
-    /* background: radial-gradient(circle at 34% 52%,#120422, #0c092a, #000000); */
-    /* background: radial-gradient(circle at 34% 52%, #120422, #090211, #000000); */
     color: #fff;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-image: url('../assets/img/bg-kamal-portfolio.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
 }
 
 :root {
@@ -18,16 +16,10 @@ body {
     color: var(--light-grey);
 }
 
-/* h1 {
-    font-size: 6rem !important;
-} */
+
 @media (min-width:1400px) {
     h1 {
         font-size: 6rem !important;
-    }
-
-    p {
-        font-size: 1.5rem;
     }
 }
 
@@ -35,10 +27,6 @@ body {
 @media (min-width:1200px) and (max-width : 1399.98px) {
     h1 {
         font-size: 5.1rem !important;
-    }
-
-    p {
-        font-size: 1.3rem;
     }
 
     .explore-btn {
@@ -56,10 +44,6 @@ body {
     h1 {
         font-size: 3rem !important;
     }
-
-    p {
-        font-size: 0.8rem;
-    }
 }
 
 @media (min-width:576px) and (max-width : 767.98px) {
@@ -72,16 +56,11 @@ body {
     h1 {
         font-size: 2.3rem !important;
     }
-
-    p {
-        font-size: 0.5rem;
-    }
 }
 
 @media (max-width:575.98px) {
     h1 {
         font-size: 1.7rem !important;
-        /* font-size: 2.3rem !important; */
 
     }
 }
@@ -116,7 +95,7 @@ body {
     color: #cabdbd;
 }
 
-.talk-btn {
+.resume-btn {
     color: #fff;
     text-decoration: none;
     border: solid 2px #fff;
@@ -125,7 +104,7 @@ body {
     padding: 0.8rem 1.6rem;
 }
 
-.talk-btn:hover {
+.resume-btn:hover {
     color: #000;
     background-color: #fff;
     transition: 0.3s all ease;
@@ -166,5 +145,9 @@ body {
 
     .fa-arrow-right {
         transform: rotate(0deg) !important;
+    }
+
+    a {
+        color: #000 !important;
     }
 }
