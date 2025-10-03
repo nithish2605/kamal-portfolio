@@ -107,17 +107,42 @@ body {
     border-radius: 2rem;
     transition: 0.3s ease;
     padding: 0.8rem 1.6rem;
-}
-
-.resume-btn:hover {
-    color: #000;
-    background-color: #fff;
-    transition: 0.3s all ease;
-
-    .fa-arrow-right {
-        transform: rotate(0deg) !important;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    a{
+        color: #ffffff;
     }
 }
+
+.resume-btn::before{
+    position: absolute;
+    content:"";
+    height:100%;
+    border-radius:2.5rem;
+    width:0%;
+    color: #000;
+    background-color: #fff;
+    left:0;
+    top:0;
+    transition: 0.3s all ease-in-out;
+    z-index: -1;
+}
+
+.resume-btn:hover::before{
+    width: 100%;
+}
+.resume-btn:hover{
+    color: #000 !important;
+        .fa-arrow-right {
+        transform: rotate(0deg) !important;
+    }
+    a{
+        color: #000;
+    }
+}
+
+
 
 .btn-navclose {
     color: #fff !important;
@@ -134,13 +159,12 @@ body {
     transition: 0.3s all ease;
 }
 
-.explore-btn {
+/* .explore-btn {
     color: #fff;
     text-decoration: none;
     border: solid 2px #fff;
     border-radius: 2rem;
     transition: 0.3s ease;
-    /* padding: 0.8rem 1.6rem; */
 }
 
 .explore-btn:hover {
@@ -155,4 +179,4 @@ body {
     a {
         color: #000 !important;
     }
-}
+} */
