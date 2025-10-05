@@ -1,6 +1,8 @@
-html{
+html {
     scroll-behavior: smooth !important;
 }
+
+
 .hero-section,
 body {
     color: #fff;
@@ -25,7 +27,6 @@ body {
         font-size: 6rem !important;
     }
 }
-
 
 @media (min-width:1200px) and (max-width : 1399.98px) {
     h1 {
@@ -110,34 +111,38 @@ body {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    a{
+
+    a {
         color: #ffffff;
     }
 }
 
-.resume-btn::before{
+.resume-btn::before {
     position: absolute;
-    content:"";
-    height:100%;
-    border-radius:2.5rem;
-    width:0%;
+    content: "";
+    height: 100%;
+    border-radius: 2.5rem;
+    width: 0%;
     color: #000;
     background-color: #fff;
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
     transition: 0.3s all ease-in-out;
     z-index: -1;
 }
 
-.resume-btn:hover::before{
+.resume-btn:hover::before {
     width: 100%;
 }
-.resume-btn:hover{
+
+.resume-btn:hover {
     color: #000 !important;
-        .fa-arrow-right {
+
+    .fa-arrow-right {
         transform: rotate(0deg) !important;
     }
-    a{
+
+    a {
         color: #000;
     }
 }
@@ -159,24 +164,55 @@ body {
     transition: 0.3s all ease;
 }
 
-/* .explore-btn {
-    color: #fff;
-    text-decoration: none;
-    border: solid 2px #fff;
-    border-radius: 2rem;
-    transition: 0.3s ease;
+.circle {
+    background-color: #ffffff !important;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
 }
 
-.explore-btn:hover {
-    color: #000;
-    background-color: #fff;
-    transition: 0.3s all ease;
+.line {
+    width: 100%;
+    /* background-color: red !important; */
+    background-color: #ffffff !important;
+    border-radius: 5rem;
+}
 
-    .fa-arrow-right {
-        transform: rotate(0deg) !important;
+
+
+.skills-container {
+    /* width: 200px; */
+    background-color: #070d1e;
+    border-radius: 1.4rem;
+    position: relative;
+    --color1: #0377bd;
+    --color2: #ffbf0a;
+}
+
+.skills-container::after {
+    content: '';
+    position: absolute;
+    inset: -5px;
+    background: conic-gradient(from var(--angle), var(--color1) 0deg 180deg, var(--color2) 180deg 360deg);
+    z-index: -1;
+    border-radius: inherit;
+    animation: rotates 3s linear infinite;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 53deg;
+    inherits: false;
+}
+
+@keyframes rotates {
+    from {
+        --angle: 53deg;
     }
 
-    a {
-        color: #000 !important;
+    to {
+        --angle: 413deg;
     }
-} */
+
+}
