@@ -21,7 +21,13 @@
         rel="stylesheet">
     <!-- particle js cdn here -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
+    <style>
+        .certification-card {
+            background-color: #070d1e;
+            border-radius: 2rem;
+            box-shadow: #454242 0px 0px 20px 0px;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,7 +35,7 @@
     <div id="particles-js"></div>
 
 
-    <section class="hero-section pb-5">
+    <section class="hero-section pb-5" id="hero-section-id">
 
         <!-- Desktop Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark pt-4 mb-5">
@@ -41,17 +47,19 @@
                         <a class="nav-link text-light pb-0 px-0 me-4" href="#about-me-divider">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light pb-0 px-0 me-4" href="#">Services</a>
+                        <a class="nav-link text-light pb-0 px-0 me-4" href="#skills-section-divider">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light pb-0 px-0 me-4" href="#">Works</a>
+                        <a class="nav-link text-light pb-0 px-0 me-4" href="#Certifications-divider">Certifications</a>
                     </li>
                 </ul>
 
                 <!-- Brand -->
                 <div class="d-flex me-auto">
-                    <img class="img-fluid rounded-pill me-3" src="assets/img/kamal-profile.png" alt="">
-                    <a class="navbar-brand fs-3 me-lg-auto fw-bold" href="#">Kamal Vikhram.</a>
+                    <a href="index.html">
+                        <img class="img-fluid rounded-pill me-3" src="assets/img/kamal-profile.png" alt="">
+                        <a class="navbar-brand fs-3 me-lg-auto fw-bold" href="index.html">Kamal Vikhram.</a>
+                    </a>
                 </div>
 
                 <!-- Button -->
@@ -60,16 +68,18 @@
                 </a>
 
                 <!-- offcanvas mobile nav bar toggler button-->
-                <button class="text-light d-lg-none d-block fs-3 btn-navclose" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i>
+                <button class="text-light bg-transparent  d-lg-none d-block fs-3 btn-navclose" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                        class="fa-solid fa-bars"></i>
                 </button>
                 <!-- offcanvas mobile nav bar close button-->
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
                     aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
                         <div class="d-flex align-items-center justify-content-between">
                             <img class="img-fluid rounded-pill" src="assets/img/kamal-profile.png" alt="">
-                            <h5 id="offcanvasRightLabel"><a href="#" class="text-decoration-none text-dark ms-3">Kamal
+                            <h5 id="offcanvasRightLabel"><a href="#hero-section-id"
+                                    class="text-decoration-none text-light ms-3">Kamal
                                     Vikhram.</a>
                             </h5>
                         </div>
@@ -81,15 +91,16 @@
                     <!-- offcanvas mobile nav-links-->
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto">
-                            <li class="nav-item text-light">
-                                <a class="nav-link text-dark me-4" id="mob-link" data-bs-dismiss="offcanvas"
-                                    href="#about-me-divider">About</a>
+                            <li class="nav-item mb-4">
+                                <a class=" text-light text-decoration-none me-4" id="mob-link"
+                                   data-bs-target="#about-me-divider"  href="#about-me-divider">About</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark me-4" id="mob-link" href="#">Services</a>
+                            <li class="nav-item mb-4">
+                                <a class=" text-light text-decoration-none me-4" id="mob-link" href="#">Skills</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark me-4" id="mob-link" href="#">Works</a>
+                            <li class="nav-item mb-4">
+                                <a class="text-light text-decoration-none me-4" id="mob-link"
+                                    href="#">Certifications</a>
                             </li>
                         </ul>
                     </div>
@@ -99,22 +110,23 @@
         <!-- navbar end -->
 
         <!-- hero-content-section -->
-        <div class="main-content-wrapper py-5 mt-5">
+        <div class="main-content-wrapper py-lg-5 mt-lg-5">
             <div class="main-content d-lg-flex justify-content-center align-items-center mb-5">
                 <div class="container">
                     <div class="row text-center text-md-start align-items-center">
                         <!-- left content -->
-                        <div class="col-sm-7 mb-4 mb-md-0">
+                        <div class="col-md-7 mb-4 mb-md-0">
                             <h1 class="">Kamal vikhram</h1>
                             <h4 class="my-sm-4 my-3">Data Analyst | 3D Artist | Data Engineer</h4>
 
-                            <div class="resume-btn d-inline-block px-lg-4 py-lg-3 px-3 py-2 mt-sm-4 mt-3">
-                                <a class="text-decoration-none fs-6" href="#">EXPLORE MY PORTFOLIO<i
-                                        class="fa-solid fa-arrow-right ms-3"></i></a>
-                            </div>
+                            <!-- explore-my-portfolio button -->
+                            <a class="resume-btn d-inline-block px-lg-4 py-lg-3 px-3 py-2 mt-sm-4 mt-3 text-decoration-none fs-6"
+                                href="#Certifications-divider">EXPLORE MY PORTFOLIO<i
+                                    class="fa-solid fa-arrow-right ms-3"></i></a>
+                                    
                         </div>
                         <!-- right image -->
-                        <div class="col-sm-5">
+                        <div class="col-md-5">
                             <img class="img-fluid hero-bg-image" src="assets/img/3d-kamal-icon.png"
                                 alt="hero-section-image">
                         </div>
@@ -161,7 +173,7 @@
     <!-- about section end-->
 
     <!-- divider -->
-    <div class="container mt-2">
+    <div class="container mt-2" id="skills-section-divider">
         <div class="line-styling d-flex">
             <div class="col-1 circle me-3"></div>
             <div class="col-1 circle me-3"></div>
@@ -173,7 +185,8 @@
     <!-- skills section starts here-->
     <section class="skills-section py-5">
         <div class="container px-sm-5">
-            <h2 class="display-3 text-center pb-3 fw-bold">Top Skills</h2>
+
+            <h2 class="display-3 text-center pb-3 fw-bold"><i class="fa-solid fa-code"></i> Top Skills</h2>
             <div class="row mt-5 px-5">
                 <div class="col-lg-3 col-md-4 col-6">
                     <div class="skills-container text-center p-3">
@@ -246,6 +259,139 @@
     <!-- skills section ends here-->
 
     <!-- divider -->
+    <div class="container mt-2 mb-5" id="Certifications-divider">
+        <div class="line-styling d-flex">
+            <div class="col-1 circle me-3"></div>
+            <div class="col-1 circle me-3"></div>
+            <div class="line ms-3"></div>
+        </div>
+    </div>
+    <!-- divider -->
+
+    <!-- Certifications section starts here -->
+    <section class="certification-section pb-5">
+        <div class="container">
+            <h2 class="display-3 text-center fw-bold"><i class="fa-solid fa-graduation-cap me-3"></i>Certification</h2>
+            <div class="row">
+                <!-- deloitte certificate -->
+                <div class="col-lg-6 col-12">
+                    <div class="certification-card p-4 mt-5">
+                        <div class="row">
+                            <div class="col-sm-5 col-6">
+                                <img class="img-fluid mb-4" src="assets/img/DeloitteNewSmall.png"
+                                    alt="certificate-image">
+                                <p><span class="fw-bold me-2">Date: </span>June 2025</p>
+                                <p><span class="fw-bold me-2">Status:</span>Completed</p>
+                            </div>
+                            <div class="col-sm-7 col-6">
+                                <h4 class="mb-4 fw-bold">Data Analytics Deloitte Certificate</h4>
+                                <a class="mb-4 text-decoration-none fw-bold" href="assets/img/Data_Analytics_Deloitte_Certificate.pdf">click here to see certificate</a>
+                                <p class="mt-4">Skills Acquired: <span class="fw-bold ms-2"> Tableau , Excel</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- simple learn certificate -->
+                <div class="col-lg-6 col-12">
+                    <div class="certification-card p-4 mt-5">
+                        <div class="row">
+                            <div class="col-sm-5 col-6">
+                                <img class="img-fluid mb-4" src="assets/img/simple_learn.png" alt="certificate-image">
+                                <p><span class="fw-bold me-2">Date: </span>sep 2025</p>
+                                <p><span class="fw-bold me-2">Status:</span>Completed</p>
+                            </div>
+                            <div class="col-sm-7 col-6">
+                                <h4 class="mb-4 fw-bold">Business Analytics using Excel</h4>
+                                <a class="mb-4 text-decoration-none fw-bold" href="assets/img/Business Analytics using Excel.pdf">click here to view see certificate</a>
+                                <p class="mt-4">Skills Acquired:<span class="fw-bold ms-2">Excel, Advanced Excel,
+                                        DAX</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tata certificate -->
+                <div class="col-lg-6 col-12">
+                    <div class="certification-card p-4 mt-5">
+                        <div class="row">
+                            <div class="col-sm-5 col-6">
+                                <img class="img-fluid mb-4" src="assets/img/Tata_logo.png" alt="certificate-image">
+                                <p><span class="fw-bold me-2">Date: </span>july 2025</p>
+                                <p><span class="fw-bold me-2">Status:</span>Completed</p>
+                            </div>
+                            <div class="col-sm-7 col-6">
+                                <h4 class="mb-4 fw-bold">GenAI Powered Data Analytics</h4>
+                                <a class="mb-4 text-decoration-none fw-bold" href="assets/img/TATA_Certificate_KamalVikhram.pdf">click here to view see certificate</a>
+                                <p class="mt-4">Skills Acquired:<span class="fw-bold ms-2">Data Analytics, Generative
+                                        AI</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--lean six sigma  certificate -->
+                <div class="col-lg-6 col-12">
+                    <div class="certification-card p-4 mt-5">
+                        <div class="row">
+                            <div class="col-sm-5 col-6">
+                                <img class="img-fluid mb-4" src="assets/img/lsswb.png" alt="certificate-image">
+                                <p><span class="fw-bold me-2">Date: </span>sept 2025</p>
+                                <p><span class="fw-bold me-2">Status:</span>Completed</p>
+                            </div>
+                            <div class="col-sm-7 col-6">
+                                <h4 class="mb-4 fw-bold">Lean Six Sigma White Belt</h4>
+                                <a class="mb-4 text-decoration-none fw-bold" href="assets/img/Lean Six Sigma White Belt (LSSWB).pdf">click here to view see certificate</a>
+                                <p class="mt-4">Skills Acquired: <span class="fw-bold ms-2">Quality Analysis, Data
+                                        Driven decision making</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Udemy  certificate -->
+                <div class="col-lg-6 col-12">
+                    <div class="certification-card p-4 mt-5">
+                        <div class="row">
+                            <div class="col-sm-5 col-6">
+                                <img class="img-fluid mb-4" src="assets/img/udemy-img.webp" alt="certificate-image">
+                                <p><span class="fw-bold me-2">Date: </span>sept 2025</p>
+                                <p><span class="fw-bold me-2">Status:</span>Completed</p>
+                            </div>
+                            <div class="col-sm-7 col-6">
+                                <h4 class="mb-4 fw-bold">Visualization using Power-BI - Udemy</h4>
+                                <a class="mb-4 text-decoration-none fw-bold" href="assets/img/Visualization using Power-BI - Udemy.jpeg">click here to view see certificate</a>
+                                <p class="mt-4">Skills Acquired: <span class="fw-bold ms-2">Power BI, DAX</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Beasant  certificate -->
+                <div class="col-lg-6 col-12">
+                    <div class="certification-card p-4 mt-5">
+                        <div class="row">
+                            <div class="col-sm-5 col-6">
+                                <img class="img-fluid mb-4" src="assets/img/besant-img.png" alt="certificate-image">
+                                <p><span class="fw-bold me-2">Date: </span>August 2025</p>
+                                <p><span class="fw-bold me-2">Status:</span>Completed</p>
+                            </div>
+                            <div class="col-sm-7 col-6">
+                                <h4 class="mb-4 fw-bold">Data Analytics - Besant Technologies</h4>
+                                <a class="mb-4 text-decoration-none fw-bold" href="assets/img/Data Analytics - Besant Technologies.jpeg">click here to view see certificate</a>
+                                <p class="mt-4">Skills Acquired: <span class="fw-bold ms-2">Power BI, SQL, mySQL</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- certifications section ends here -->
+
+    <!-- divider -->
     <div class="container mt-2 mb-5" id="about-me-divider">
         <div class="line-styling d-flex">
             <div class="col-1 circle me-3"></div>
@@ -255,6 +401,7 @@
     </div>
     <!-- divider -->
 
+
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.min.js"></script>
 
@@ -262,6 +409,11 @@
         particlesJS.load('particles-js', 'particlesjs-config.json', function () {
             console.log('particles-js config loaded');
         });
+
+ 
+
+
+
     </script>
 </body>
 
