@@ -34,9 +34,9 @@
     <!-- particle js -->
     <div id="particles-js"></div>
    
-    <div class="go-to-top">
-        
-    </div>  
+    <a href="#hero-section-id" class="go-to-top d-flex justify-content-center align-items-center fs-4 text-decoration-none text-white">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>  
     <section class="hero-section pb-5" id="hero-section-id">
         <!-- Desktop Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark pt-4 mb-5">
@@ -406,33 +406,8 @@
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.min.js"></script>
-
-    <script>
-        particlesJS.load('particles-js', 'particlesjs-config.json', function () {
-            console.log('particles-js config loaded');
-        });
-    //Handling the scroll for canvas
-    document.querySelectorAll('.offcanvas-body a[href^="#"]').forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const target = document.querySelector(targetId);
-            const offcanvas = document.getElementById('offcanvasRight');
-            const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
-
-            // Close offcanvas first
-            bsOffcanvas.hide();
-
-            // Scroll after offcanvas is hidden
-            offcanvas.addEventListener('hidden.bs.offcanvas', function handler() {
-                target.scrollIntoView({ behavior: 'smooth' });
-                offcanvas.removeEventListener('hidden.bs.offcanvas', handler);
-            });
-        });
-    });
-  
-    
-    </script>
+     <!-- main js here -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

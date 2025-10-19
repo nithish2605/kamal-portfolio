@@ -18,7 +18,7 @@ body {
     height: 100%;
     /* background-color: #020617;  */
     /* background: linear-gradient(to right, #020617, #006181); */
-    background: radial-gradient(circle at 24% 42%,#01040f, #022346, rgba(0,97,129,1));
+    background: radial-gradient(circle at 24% 42%, #01040f, #022346, rgba(0, 97, 129, 1));
     z-index: -1;
 }
 
@@ -165,8 +165,6 @@ body {
     }
 }
 
-
-
 .btn-navclose {
     color: #fff !important;
     background-color: black;
@@ -175,7 +173,7 @@ body {
 
 #mob-link:hover {
     color: #767373 !important;
-    
+
 }
 
 .fa-arrow-right {
@@ -233,5 +231,25 @@ body {
     to {
         --angle: 413deg;
     }
+}
 
+.go-to-top {
+    position: fixed;
+    border: 0.2rem solid #ffffff;
+    background-color: #ffffff;
+    width: fit-content;
+    border-radius: 50%;
+    padding: 1rem;
+    right: 4rem;
+    bottom: 3rem;
+    display: none !important;
+   .fa-arrow-up { color: #000; }
+    &:hover {
+        background-color: #010c1e !important;
+        .fa-arrow-up { color: #ffffff; }
+    }
+}
+
+.go-to-top.show {
+    display: flex !important;
 }
