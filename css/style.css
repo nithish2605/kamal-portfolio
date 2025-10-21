@@ -243,13 +243,45 @@ body {
     right: 4rem;
     bottom: 3rem;
     display: none !important;
-   .fa-arrow-up { color: #000; }
+    z-index: 1000 !important;
+
+    .fa-arrow-up {
+        color: #000;
+    }
+
     &:hover {
         background-color: #010c1e !important;
-        .fa-arrow-up { color: #ffffff; }
+
+        .fa-arrow-up {
+            color: #ffffff;
+        }
     }
 }
 
 .go-to-top.show {
     display: flex !important;
+}
+
+.send-btn {
+    border-radius: 1rem;
+    /* border: 0.3rem solid #18638b !important; */
+    background-color: #000;
+    color: #ffffff;
+    position: relative;
+    border: none;
+}
+
+.send-btn::before {
+    content: '';
+    position: absolute;
+    background-color: #18638b;
+    z-index: -1;
+    border-radius: 1rem;
+    inset: -4px;
+}
+
+.send-btn:hover {
+    color: #000;
+    background-color: #ffffff;
+    box-shadow: 40px 0 100px #00d9ff , -40px 0 100px #00d9ff;
 }
