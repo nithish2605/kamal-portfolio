@@ -418,14 +418,21 @@
     <!-- Contact Form section starts here -->
     <section class="pb-5">
         <h2 class="text-center display-3 fw-bold"><i class="fa-solid fa-envelope me-3"></i>Contact Me</h2>
-        <div class="container d-flex justify-content-center">
-            <form action="" method="" class="mt-4" style="width: 800px;">
+        <div class="container d-flex justify-content-center">   
+            <form action="process.php" method="" class="mt-4" style="width: 800px;">
+                <!-- name input -->
                 <div class="form-label">Name</div>
-                <input type="text"  name="name" class="form-control mb-3 mb-sm-5">
+                <input type="text"  name="name" id="name" class="form-control mb-3 mb-sm-5">
+
+                <!-- name email -->
                 <div class="form-label">Email</div>
-                <input type="email" name="email" class="form-control mb-3 mb-sm-5">
+                <input type="email" name="email" id="email" class="form-control mb-3 mb-sm-5">
+
+                <!-- name message -->
                 <div class="form-label">Message</div>
-                <textarea class="form-control" name="message"  rows="5"></textarea>
+                <textarea class="form-control" name="message" id="message"  rows="5"></textarea>
+
+                <!-- send btn -->
                 <div class="row justify-content-center">
                     <button class="mt-5 send-btn px-5 py-3 fw-bold" style="width: fit-content;">Send</button>
                 </div>
