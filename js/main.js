@@ -38,4 +38,25 @@ window.onscroll = () => {
     }
 }
 
+//email js here
+(function () {
+    emailjs.init({
+        publicKey: "nGUtf4wyueXH-bLEV",
+    });
+})();
+document.querySelector('#contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const templeateparam = {
+        name: document.querySelector('#name').value,
+        email: document.querySelector('#email').value,
+        message: document.querySelector('#message').value
+    };
+    emailjs.send("service_zwpll05", "template_c51nmfs", templeateparam)
+        .then(function (response) {
+            alert("Messageb sent successflly");
+        }, function (error) {
+            alert("Failed to send message please contact this mail XXXX");
+        });
+}); 
+
 

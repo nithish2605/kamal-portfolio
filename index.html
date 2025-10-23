@@ -54,6 +54,9 @@
                     <li class="nav-item">
                         <a class="nav-link text-light pb-0 px-0 me-4" href="#Certifications-divider">Certifications</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light pb-0 px-0 me-4" href="#contact-me-divider">Contact Me</a>
+                    </li>
                 </ul>
 
                 <!-- Brand -->
@@ -104,6 +107,10 @@
                             <li class="nav-item mb-4">
                                 <a class="text-light text-decoration-none me-4" id="mob-link"
                                     href="#Certifications-divider">Certifications</a>
+                            </li>
+                             <li class="nav-item mb-4">
+                                <a class="text-light text-decoration-none me-4" id="mob-link"
+                                    href="#contact-me-dividerr">Contact Me</a>
                             </li>
                         </ul>
                     </div>
@@ -418,11 +425,11 @@
     <!-- Contact Form section starts here -->
     <section class="pb-5">
         <h2 class="text-center display-3 fw-bold"><i class="fa-solid fa-envelope me-3"></i>Contact Me</h2>
-        <div class="container d-flex justify-content-center">   
-            <form action="process.php" method="" class="mt-4" style="width: 800px;">
+        <div class="container d-flex justify-content-center">
+            <form class="mt-4" id="contact-form" style="width: 800px;">
                 <!-- name input -->
                 <div class="form-label">Name</div>
-                <input type="text"  name="name" id="name" class="form-control mb-3 mb-sm-5">
+                <input type="text" name="name" id="name" class="form-control mb-3 mb-sm-5">
 
                 <!-- name email -->
                 <div class="form-label">Email</div>
@@ -430,29 +437,21 @@
 
                 <!-- name message -->
                 <div class="form-label">Message</div>
-                <textarea class="form-control" name="message" id="message"  rows="5"></textarea>
+                <textarea class="form-control" name="message" id="message" rows="5"></textarea>
 
                 <!-- send btn -->
                 <div class="row justify-content-center">
-                    <button class="mt-5 send-btn px-5 py-3 fw-bold" style="width: fit-content;">Send</button>
+                    <button type="submit" class="mt-5 send-btn px-5 py-3 fw-bold" style="width: fit-content;">Send</button>
                 </div>
             </form>
         </div>
 
     </section>
-    <!-- Contact Form section ends here -->
+    <!-- Contact Form section ends here -->x`       
 
-    <!-- divider -->
-    <div class="container mt-2">
-        <div class="line-styling d-flex">
-            <div class="col-1 circle me-3"></div>
-            <div class="col-1 circle me-3"></div>
-            <div class="line ms-3"></div>
-        </div>
-    </div>
-    <!-- divider -->
-
-
+    <!-- Email js CDN link -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.min.js"></script>
     <!-- main js here -->
