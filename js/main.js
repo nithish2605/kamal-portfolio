@@ -38,6 +38,28 @@ window.onscroll = () => {
     }
 }
 
+
+
+//toaster options
+toastr.options = {
+    "closeButton": true,
+    "debug": false,
+    "newestOnTop": true,
+    "progressBar": true,
+    "positionClass": "toast-top-center",
+    "preventDuplicates": false,
+    "onclick": null,
+    "showDuration": "300",
+    "hideDuration": "1000",
+    "timeOut": 4000,
+    "extendedTimeOut": 0,
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "fadeIn",
+    "hideMethod": "fadeOut",
+    "tapToDismiss": false
+};
+
 //email js here
 (function () {
     emailjs.init({
@@ -51,12 +73,19 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
         email: document.querySelector('#email').value,
         message: document.querySelector('#message').value
     };
-    emailjs.send("service_zwpll05", "template_c51nmfs", templeateparam)
-        .then(function (response) {
-            alert("Messageb sent successflly");
-        }, function (error) {
-            alert("Failed to send message please contact this mail XXXX");
-        });
-}); 
+
+    if (templeateparam.email != '' && templeateparam.name != '' && templeateparam.message != '') {
+        emailjs.send("service_zwpll05", "template_c51nmfs", templeateparam)
+            .then(() => {
+                toastr.success("Your Message Successfully Sent <br> Thank You");
+            }, (error) => {
+                toastr.error("Failed to send message" + JSON.stringify(error))
+            });
+    }
+    else {
+        toastr.warning('<b>Please Fill All the Field<b>');
+    }
+});
+
 
 
