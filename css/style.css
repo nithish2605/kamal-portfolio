@@ -292,3 +292,10 @@ body {
     background-color: #ffffff;
     box-shadow: 40px 0 100px #00d9ff, -40px 0 100px #00d9ff;
 }
+
+.certification-card{
+    transition:all 0.1s linear;
+    &:hover{
+            transform: translateY(-10px) !important;
+    }
+}
