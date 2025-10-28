@@ -19,14 +19,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!-- toaster css here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+        integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <!-- particle js cdn here -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <!-- toaster css cdn here -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- Toastr JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <style>
         .certification-card {
             background-color: #070d1e;
@@ -95,7 +95,7 @@
                             </h5>
                         </div>
 
-                        <button type="button" class="btn-close text-reset" style="background-color: #ffffff !important;" data-bs-dismiss="offcanvas"
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
 
@@ -129,7 +129,7 @@
         <div class="main-content-wrapper py-lg-5 mt-lg-5">
             <div class="main-content d-lg-flex justify-content-center align-items-center mb-5">
                 <div class="container">
-                    <div class="row text-center text-md-start align-items-center">
+                    <div class="row text-center text-md-start align-items-center" data-aos="fade-up">
                         <!-- left content -->
                         <div class="col-md-7 mb-4 mb-md-0">
                             <h1 class="">Kamal vikhram</h1>
@@ -166,7 +166,7 @@
 
     <!-- about section starts-->
     <section class="about-us my-5 py-lg-5">
-        <div class="container">
+        <div class="container" data-aos="fade-left" data-aos-delay="300">
             <div class="row align-items-center text-center text-md-start">
                 <div class="col-md-7">
                     <h2 class="display-2 mb-4 fw-bold">Who am I</h2>
@@ -200,7 +200,7 @@
 
     <!-- skills section starts here-->
     <section class="skills-section py-5">
-        <div class="container px-sm-5">
+        <div class="container px-sm-5" data-aos="zoom-in" data-aos-delay="300" >
 
             <h2 class="display-3 text-center pb-3 fw-bold"><i class="fa-solid fa-code"></i> Top Skills</h2>
             <div class="row mt-5 px-5">
@@ -286,12 +286,12 @@
 
     <!-- Certifications section starts here -->
     <section class="certification-section pb-5">
-        <div class="container">
+        <div class="container" >
             <h2 class="display-3 text-center fw-bold"><i class="fa-solid fa-graduation-cap me-3"></i>Certification</h2>
             <div class="row">
                 <!-- deloitte certificate -->
                 <div class="col-lg-6 col-12">
-                    <div class="certification-card p-4 mt-5">
+                    <div class="certification-card p-4 mt-5" data-aos="fade-up" data-aos-delay="300">
                         <div class="row">
                             <div class="col-sm-5 col-6">
                                 <img class="img-fluid mb-4" src="assets/img/deloitte-logo.png" alt="certificate-image">
@@ -303,14 +303,14 @@
                                 <a class="mb-4 text-decoration-none fw-bold"
                                     href="assets/img/Data_Analytics_Deloitte_Certificate.pdf">click here to see
                                     certificate</a>
-                                <p class="mt-4">Skills Acquired: <span class="fw-bold"> Tableau , Excel</span></p>
+                                <p class="mt-4">Skills Acquired: <span class="fw-bold ms-2"> Tableau , Excel</span></p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- simple learn certificate -->
                 <div class="col-lg-6 col-12">
-                    <div class="certification-card p-4 mt-5">
+                    <div class="certification-card p-4 mt-5" data-aos="fade-up" data-aos-delay="300">
                         <div class="row">
                             <div class="col-sm-5 col-6">
                                 <img class="img-fluid mb-4" src="assets/img/simple_learn.png" alt="certificate-image">
@@ -322,7 +322,7 @@
                                 <a class="mb-4 text-decoration-none fw-bold"
                                     href="assets/img/Business Analytics using Excel.pdf">click here to view see
                                     certificate</a>
-                                <p class="mt-4">Skills Acquired:<span class="fw-bold"> Excel, Advanced Excel,
+                                <p class="mt-4">Skills Acquired:<span class="fw-bold ms-2">Excel, Advanced Excel,
                                         DAX</span></p>
                             </div>
                         </div>
@@ -331,7 +331,7 @@
 
                 <!-- Tata certificate -->
                 <div class="col-lg-6 col-12">
-                    <div class="certification-card p-4 mt-5">
+                    <div class="certification-card p-4 mt-5" data-aos="fade-up" data-aos-delay="300">
                         <div class="row">
                             <div class="col-sm-5 col-6">
                                 <img class="img-fluid mb-4" src="assets/img/tata-logo.png" alt="certificate-image">
@@ -343,7 +343,7 @@
                                 <a class="mb-4 text-decoration-none fw-bold"
                                     href="assets/img/TATA_Certificate_KamalVikhram.pdf">click here to view see
                                     certificate</a>
-                                <p class="mt-4">Skills Acquired:<span class="fw-bold"> Data Analytics, Generative
+                                <p class="mt-4">Skills Acquired:<span class="fw-bold ms-2">Data Analytics, Generative
                                         AI</span></p>
                             </div>
                         </div>
@@ -352,7 +352,7 @@
 
                 <!--lean six sigma  certificate -->
                 <div class="col-lg-6 col-12">
-                    <div class="certification-card p-4 mt-5">
+                    <div class="certification-card p-4 mt-5" data-aos="fade-up" data-aos-delay="300">
                         <div class="row">
                             <div class="col-sm-5 col-6">
                                 <img class="img-fluid mb-4" src="assets/img/lsswb-logo.png" alt="certificate-image">
@@ -364,7 +364,7 @@
                                 <a class="mb-4 text-decoration-none fw-bold"
                                     href="assets/img/Lean Six Sigma White Belt (LSSWB).pdf">click here to view see
                                     certificate</a>
-                                <p class="mt-4">Skills Acquired: <span class="fw-bold"> Quality Analysis, Data
+                                <p class="mt-4">Skills Acquired: <span class="fw-bold ms-2">Quality Analysis, Data
                                         Driven decision making</span></p>
                             </div>
                         </div>
@@ -373,7 +373,7 @@
 
                 <!--Udemy  certificate -->
                 <div class="col-lg-6 col-12">
-                    <div class="certification-card p-4 mt-5">
+                    <div class="certification-card p-4 mt-5" data-aos="fade-up" data-aos-delay="300">
                         <div class="row">
                             <div class="col-sm-5 col-6">
                                 <img class="img-fluid mb-4" src="assets/img/udemy-logo.png" alt="certificate-image">
@@ -385,7 +385,7 @@
                                 <a class="mb-4 text-decoration-none fw-bold"
                                     href="assets/img/Visualization using Power-BI - Udemy.jpeg">click here to view see
                                     certificate</a>
-                                <p class="mt-4">Skills Acquired: <span class="fw-bold"> Power BI, DAX</span></p>
+                                <p class="mt-4">Skills Acquired: <span class="fw-bold ms-2">Power BI, DAX</span></p>
                             </div>
                         </div>
                     </div>
@@ -393,7 +393,7 @@
 
                 <!--Beasant  certificate -->
                 <div class="col-lg-6 col-12">
-                    <div class="certification-card p-4 mt-5">
+                    <div class="certification-card p-4 mt-5" data-aos="fade-up" data-aos-delay="300">
                         <div class="row">
                             <div class="col-sm-5 col-6">
                                 <img class="img-fluid mb-4" src="assets/img/besant-logo.png" alt="certificate-image">
@@ -405,7 +405,7 @@
                                 <a class="mb-4 text-decoration-none fw-bold"
                                     href="assets/img/Data Analytics - Besant Technologies.jpeg">click here to view see
                                     certificate</a>
-                                <p class="mt-4">Skills Acquired: <span class="fw-bold"> Power BI, SQL, mySQL</span>
+                                <p class="mt-4">Skills Acquired: <span class="fw-bold ms-2">Power BI, SQL, mySQL</span>
                                 </p>
                             </div>
                         </div>
@@ -429,21 +429,21 @@
     <!-- divider -->
 
     <!-- Contact Form section starts here -->
-    <section class="pb-5">
+    <section class="pb-5" data-aos="fade-right" data-aos-delay="400">
         <h2 class="text-center display-3 fw-bold"><i class="fa-solid fa-envelope me-3"></i>Contact Me</h2>
         <div class="container d-flex justify-content-center">
             <form class="mt-4" id="contact-form" style="width: 800px;">
                 <!-- name input -->
                 <div class="form-label">Name</div>
-                <input type="text" name="name" id="name" class="form-control mb-3 mb-sm-5">
+                <input type="text" name="name" id="name" required class="form-control mb-3 mb-sm-5">
 
                 <!-- name email -->
                 <div class="form-label">Email</div>
-                <input type="email" name="email" id="email" class="form-control mb-3 mb-sm-5">
+                <input type="email" name="email" id="email" required class="form-control mb-3 mb-sm-5">
 
                 <!-- name message -->
                 <div class="form-label">Message</div>
-                <textarea class="form-control" name="message" id="message" rows="5"></textarea>
+                <textarea class="form-control" name="message" required id="message" rows="5"></textarea>
 
                 <!-- send btn -->
                 <div class="row justify-content-center">
@@ -454,13 +454,19 @@
         </div>
 
     </section>
-    <!-- Contact Form section ends here -->x`
+    <!-- Contact Form section ends here -->
 
+    <!-- toaster js here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+        integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Email js CDN link -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- main js here -->
     <script src="js/main.js"></script>
 </body>
