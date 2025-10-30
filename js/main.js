@@ -69,6 +69,7 @@ toastr.options = {
 })();
 document.querySelector('#contact-form').addEventListener('submit', (e) => {
     e.preventDefault();
+    console.log("entering..1")
     const templeateparam = {
         name: document.querySelector('#name').value,
         email: document.querySelector('#email').value,
@@ -84,7 +85,7 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
             });
     }
     else {
-        toastr.warning('<b>Please Fill All the Field<b>');
+        toastr.Warning('<b>Please Fill All the Field<b>');
     }
 });
 
