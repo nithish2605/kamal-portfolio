@@ -85,7 +85,7 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
             });
     }
     else {
-        toastr.Warning('<b>Please Fill All the Field<b>');
+        toastr.w    arning('<b>Please Fill All the Field<b>');
     }
 });
 
